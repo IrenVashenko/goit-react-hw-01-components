@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Box } from 'components/Box/Box'
 import { Title, StatList, StatItem, Label, Percentage } from './Statistics.style'
 
@@ -26,3 +27,8 @@ export const Statistics = ({ title, stats }) => {
         </Box>
     )
 }
+
+Statistics.propTypes = {
+    title: PropTypes.string,
+    stats: PropTypes.object,
+};
