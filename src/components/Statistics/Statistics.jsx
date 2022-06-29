@@ -1,20 +1,9 @@
 import PropTypes from 'prop-types';
-import { Box } from 'components/Box/Box'
-import { Title, StatList, StatItem, Label, Percentage } from './Statistics.style'
+import { Title, StatList, StatItem, Label, Percentage, BoxCenter } from './Statistics.style'
 
 export const Statistics = ({ title, stats }) => {
     return (
-        <Box
-            maxWidth="400px"
-            boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
-            as="section"
-            mt="70px"
-            mb="70px"
-            mr="auto"
-            ml="auto"
-            borderRadius="2px"
-            pt="15px"
-        >
+        <BoxCenter>
             <Title>{title}</Title>
             <StatList>
                 {stats.map(stat => (
@@ -24,7 +13,7 @@ export const Statistics = ({ title, stats }) => {
                     </StatItem>
                 ))}
             </StatList>
-        </Box>
+        </BoxCenter>
     )
 }
 

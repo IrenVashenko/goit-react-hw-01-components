@@ -1,3 +1,11 @@
+.friendList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
 .item {
     display: flex;
     align-items: center;

@@ -1,5 +1,14 @@
 import styled from "styled-components"
 
+export const BoxCenter = styled.div`
+    max-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 70px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    padding-top: 15px;
+`;
 
 export const Title = styled.h2`
     display: flex;
